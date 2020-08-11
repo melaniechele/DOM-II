@@ -87,8 +87,12 @@ const divDrag = document.createElement('div');
 
 // adding style to div drag
 divDrag.style.border = '1px solid black'
-divDrag.style.width = '100px'
+divDrag.style.width = '150px'
+divDrag.style.height = '50px'
+divDrag.style.margin = '15px'
 
+// adding attributes to drag
+divDrag.setAttribute('class', "dropTheBomb")
 
 //creating paragraph for diva
 const para = document.createElement('p');
@@ -99,6 +103,8 @@ para.textContent = "DRAG ME!!!!!"
 //adding attribute
 para.setAttribute('draggable', true)
 para.setAttribute('class', "dropTheBomb")
+
+para.setAttribute('id', 'dragTheBomb')
 
 // grabbing container
 const container = document.querySelector('.container')
